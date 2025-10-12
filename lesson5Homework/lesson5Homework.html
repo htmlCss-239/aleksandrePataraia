@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: #ceaaaa;
+            }
+            
+            .heading1{
+                text-align: center;
+                color: #ab1a1a;
+                font-style: italic;
+                border: 1px solid black;
+                background-color: white;
+            }
+
+            header{
+                background-color: black;
+                border: 4px dashed black;
+            }
+
+            .liimg{
+                width: 380px;
+                height: 400px;
+                border: black solid 3px;
+                border-radius: 10%;
+            }
+
+            #topimgs{
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+
+            .imgnames{
+                font-style: italic;
+            }
+
+            #namesdiv{
+                display: flex;
+                justify-content: center;
+                gap: 290px;
+            }
+
+            .paras{
+                text-align: justify;
+                margin: 20px;
+            }
+
+            table{
+                border: 3px black dashed;
+                border-collapse: collapse
+            }
+
+            th, td{
+                padding: 20px;
+                border: 1px black solid;
+                border-collapse: collapse;
+            }
+
+            th{
+                background-color: #b85454;
+            }
+
+            td{
+                background-color: #dccccc;
+            }
+
+            #tablediv {
+                display: flex;
+                justify-content: center;
+            }
+
+            .pos {
+                text-align: center;
+            }
+
+            footer{
+                margin: 20px;
+            }
+
+            .footerimg{
+                width: 400px;
+                height: 200px;
+                border: black solid 3px;
+            }
+
+            #footerimgdiv{
+                display: flex;
+                gap: 40px;
+            }
+
+            #inputdiv{
+                margin-top: 30px;
+            }
+
+            #upcommingdiv{
+                border: black solid 3px;
+                padding: 10px;
+                background-color: #dccccc;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <h1 class="heading1">Formula 1</h1>
+            <h1 class="heading1">2025 World Driver Championship Standings</h1>
+            <h5 class="heading1" style="color: black; padding: 1%;font-weight: 100; font-style: normal;">Prior to the United States Grand Prix</h5>
+        </header>
+        <main>
+            <p style="margin-top: 50px; text-align: justify;">The 2025 Formula 1 season has delivered thrilling races, close battles, and intense rivalries. Every Grand Prix reshuffles the leaderboard and narrows — or widens — the gaps in the title fight. Here’s where things stand in the drivers’ race for glory:</p>
+            <ol type="1">
+                <div id="topimgs">
+                    <li><img class="liimg" src="./img/Piastri2025.webp" alt=""></li>
+                    <li><img class="liimg" src="./img/landoN.png" alt=""></li>
+                    <li><img class="liimg" src="./img/max-verstappen-portrait-2025.avif" alt=""></li>
+                </div>
+            </ol>
+            <div id="namesdiv">
+                <h3 class="imgnames">Oscar Piastri</h3>
+                <h3 class="imgnames">Lando Norris</h3>
+                <h3 class="imgnames">Max Verstappen</h3>
+            </div>
+            <div>
+                <p class="paras">The 2025 Formula 1 season has so far unfolded as a story of resurgence, fierce intra-team rivalry, and shifting momentum. McLaren, after years of rebuilding, have firmly reasserted themselves as the benchmark, clinching the Constructors’ Championship in Singapore with six rounds to spare. Their two drivers, Oscar Piastri and Lando Norris, have traded race wins and lead changes in the standings, making their internal battle nearly as compelling as the wider championship fight. Meanwhile, Max Verstappen has made a late push to close the gap, keeping the title contest alive even as McLaren dominate the team standings.</p>
+            </div> 
+            <div id="tablediv">
+                <table>
+                    <tr>
+                        <th>Position</th>
+                        <th>Driver</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td class="pos">1</td>
+                        <td>Oscar Piastri</td>
+                        <td>Mclaren</td>
+                        <td>336</td>
+                    </tr>
+                    <tr>
+                        <td class="pos">2</td>
+                        <td>Lando Norris</td>
+                        <td>Mclaren</td>
+                        <td>314</td>
+                    </tr>
+                    <tr>
+                        <td class="pos">3</td>
+                        <td>Max Verstappen</td>
+                        <td>RedBull</td>
+                        <td>273</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p class="paras">Beyond the title fight, the season has delivered a host of surprises and standout moments. George Russell’s win in Singapore halted McLaren’s clean sweep in that race, and served as a reminder that never say never in F1. The midfield has also come alive: teams like Sauber, powered by Nico Hülkenberg, have grabbed points and podiums when least expected. Polarizing on-track incidents, tight qualifying gaps, and evolving strategies underline just how unpredictable this season has become.</p>
+            </div>
+            <hr>
+        </main>
+        <footer>
+            <div id="upcommingdiv">
+                <h6 style="font-size: 12px; font-weight: 100;">Upcomming Grand Prix:</h6>
+                <p>17.10.2025-19.10.2025</p>
+                <p>Austin, Texas, The United States of America</p>
+                <div id="footerimgdiv">
+                    <img class="footerimg" src="./img/US grand prix.avif" alt="">
+                    <img class="footerimg" src="./img/USA_Circuit.avif" alt="">
+                </div>
+            </div>
+            <div id="inputdiv"><label for="inputtext" style="font-size: 13px;">Please provide feedback on how we can improve our services:</label><br><br>
+            <input type="text" id="inputtext" name="inputtext">
+            <input type="submit" value="Send">
+            </div>
+        </footer>
+    </body>
+</html>
