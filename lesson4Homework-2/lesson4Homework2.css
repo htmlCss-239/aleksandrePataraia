@@ -1,0 +1,75 @@
+.headerimg {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 30px;
+}
+
+#img1 {
+    width: 100%
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav a {
+    color: black;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 3px;
+    font-size: 24;
+}
+
+#div1 {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 64;
+    font-weight: normal;
+}
+
+#div2-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.img2-4 {
+    width: 200px;
+    height: 150px;
+}
+
+li{
+    font-size: 20px;
+}
+
+#div5 {
+    margin: 40px auto;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 30px;
+    width: 870px;
+    height: 225px;
+}
+
+#div5p {
+    font-size: 24px;
+}
+
+footer {
+    background-color: black;
+}
+
+input {
+    width: 100%;
+    border: 8px black solid;
+}
