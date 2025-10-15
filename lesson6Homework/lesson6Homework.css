@@ -1,0 +1,144 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    background-color: #c4cdce;
+}
+
+header{
+    background-color: #CEC5C4;
+    margin: 0%;
+    text-align: center;
+    padding: 10px;
+    border: 2px black dashed;
+}
+
+h1{
+    color: black;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#intro {
+    text-align: justify;
+    margin: 20px;
+}
+
+#imgdiv{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.imgsstl{
+    width: 500;
+    height: 300;
+    padding: 10px;
+}
+
+#img1div:hover img {
+    width: 700px;
+    height: 400px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+#img2div:hover img {
+    width: 700px;
+    height: 400px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+#img3div:hover img {
+    width: 700px;
+    height: 400px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+#img1textdiv{
+    border: black solid 2px;
+    margin: 1px;
+    background-color: #CEC5C4;
+    width: 500;
+}
+
+#img2textdiv{
+    border: black solid 2px;
+    margin: 1px;
+    background-color: #CEC5C4;
+    width: 500;
+}
+
+#img3textdiv{
+    border: black solid 2px;
+    margin: 1px;
+    background-color: #CEC5C4;
+    width: 500;
+}
+
+table{
+    border: 3px #A6B3B5 solid;
+    margin: 20px;
+    padding: 2%;
+    border-collapse: collapse;
+    border-radius: 20%;
+}
+
+tr{
+    border: 1px #A6B3B5 solid;;
+    margin: 20px;
+    
+}
+
+th{
+    
+    background-color: #CEC5C4;
+    padding: 2%;
+}
+
+td{
+    padding: 2%;
+}
+
+#tablediv{
+    display: flex;
+    justify-content: center;
+}
+
+.tdstl:hover {
+    cursor: pointer;
+    background-color: #A6B3B5;
+    font-weight: bold;
+}
+
+#inputtext:hover{
+    background-color: #A6B3B5;
+    width: 400px;
+    height: 100px;
+}
+
+#inputtext:focus{
+    background-color: #CEC5C4;
+    width: 400px;
+    height: 100px;
+}
+
+#inputsubmit:hover{
+    background-color: #A6B3B5;    
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#inputsubmit:active{
+    background-color: #CEC5C4;
+}
+
+footer{
+    height: 150px
+}
