@@ -1,0 +1,374 @@
+/* 1.Overall */
+body{
+    background-image: url(./imgs/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position: center;
+    color:#e2b960;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Cursive;
+    src: url(./fonts/PlaywriteDESAS-Regular.ttf);
+}
+
+/* 2.Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+#title1{
+    font-family: Cursive;
+    display: flex;
+    justify-content: center;
+    color: #5d4737;
+    border: 4px solid #825734;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 20px;
+    font-style: italic;
+    text-shadow: 6px 4px 5px rgb(50, 47, 47), 5px 4px 4px #fffaaa;
+    box-shadow: 9px 6px 5px rgb(50, 47, 47), 10px 6px 4px #fffaaa;
+    background: linear-gradient(90deg,rgba(253, 216, 148, 1) 0%, rgba(90, 93, 86, 1) 100%);
+}
+
+/* 3.Main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3.1.div2 */
+
+#div2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.img2-4{
+    width: 400px;
+    height: 200px;
+    border: #825734 3px solid;
+    border-radius: 20%;
+}
+
+.img2-4:hover{
+    scale: 1.5;
+    transition: 0.4s;
+    cursor: pointer;
+    rotate: 20deg;
+}
+
+/* 3.2.div3 */
+
+#div3{
+    border: #e2b960 2px solid;
+    color: #e2b960;
+    background-color: #82573475;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 3.3.div4 */
+
+#div4{
+    width: 100%;
+    margin-bottom: 100px;
+    height: 150px;
+}
+
+#piltoversign{
+    width: 180px;
+    height: 130px;
+    color: #074151;
+    background: url(./imgs/img5.png);
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cursive;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 8px;
+    animation-name: airShip;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes airShip {
+    0%{
+        left: 0;
+        top: 0;
+        border: none;
+    }  
+    
+    25%{
+        left: 82%;
+        top: 0;
+    }
+
+    50%{
+        left: 82%;
+        top: 120px;
+    }
+
+    75%{
+        left: 0;
+        top: 120px;
+    }
+
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+/* 3.4.div5 */
+
+#div5{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: #e2b960 3px solid;
+    color: #e2b960;
+    background-color: #82573475;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* 3.5.div6 */
+
+#div6{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+#table1{
+    border: #825734 1px solid;
+    border-collapse: collapse;
+}
+
+#table2{
+    border: #825734 1px solid;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #5a371a75;
+    border-collapse: collapse;
+    border: #825734 1px solid;
+    text-align: center;
+}
+
+td{
+    background-color: #82573475;
+    border-collapse: collapse;
+    border: #825734 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+tr{
+    border-collapse: collapse;
+    border: #825734 1px solid;
+}
+
+/* 3.6.div7 */
+
+#div7{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: #e2b960 3px solid;
+    color: #e2b960;
+    background-color: #82573475;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* 4.Footer */
+
+footer{
+    background-color: #160d5a;
+    width: 100%;
+    font-family:;
+}
+
+/* 4.1.div8 */
+
+#div8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 4.1.1.div8_1 */
+
+#div8_1{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    font-size: 26px;
+    color: white;
+}
+
+/* 4.1.2.div8_2 */
+
+#div8_2{
+    display: flex;
+    gap: 10px;
+}
+
+.socialsimgs{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.socialsimgs:hover{
+    cursor: pointer;
+    scale: 1.25;
+}
+
+/* 4.2.div9 */
+
+#div9{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.navlink{
+    position: relative;;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navlink::after {
+  content: "";   
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+}
+
+.navlinkord{
+    text-decoration: none;
+    color: white;
+}
+
+/* 4.2.1.div9_1 */
+
+#div9_1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 4.2.2.div9_2 */
+
+#div9_2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 4.2.3.div9_3 */
+
+#div9_3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 4.2.4.div9_4 */
+
+#div9_4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 4.2.5.div9_5 */
+
+#div9_5{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#enteremail{
+    background-color:#160d5a;
+    color: white;
+    padding: 10px;
+    border: 1px white solid;
+}
+
+#subscribec{
+    padding: 10px;
+    color: #160d5a;
+}
+
+/* 4.3.div10 */
+    #div10{
+        background-color: #100943;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        padding: 10px;
+    }
+/* 4.3.1.div10_1 */
+
+#div10_1{
+    display: flex;
+    gap: 10px;
+}
+
+/* 4.3.2.div10_2 */
+
+#div10_2{
+    display: flex;
+    gap: 10px;
+}
+
+.prp{
+    text-decoration: none;
+    color: white;
+}
