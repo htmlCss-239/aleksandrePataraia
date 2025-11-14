@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     
     <!-- 1.head  -->
@@ -47,23 +48,23 @@
                     <!-- 2.1.2.div2  -->
                     
                     <div id="div2">
-                        <div id="div2_1">
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="div2_1">
+                            <i class="fa-regular fa-heart" ></i>
                             <a href="">სურვილების სია</a>
                         </div>
-                        <div>
+                        <div class="div2_1">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <a href="">კალათა</a>
                         </div>
-                        <div>
+                        <div class="div2_1">
                             <i class="fa-regular fa-user"></i>
                             <a href="">პროფილი</a>
                         </div>
-                        <div>
+                        <div class="div2_1">
                             <i class="fa-solid fa-language"></i>
                             <a href="">ენა</a>
                         </div>
-                        <div>
+                        <div class="div2_1">
                             <i class="fa-regular fa-moon"></i>
                             <a href="">ფონი</a>
                         </div>
@@ -77,11 +78,41 @@
                     <a href="">ჩვენს შესახებ</a>
                     <a href="">სიახლეები</a>
                     <a href="">კონტაქტი</a>
-                    <a href="">ტურები <i class="fa-solid fa-angle-down"></i></a>
+                    <div id="toursDD">
+                        <p onclick="toggleTours()" href="">ტურები <i class="fa-solid fa-angle-down"></i></p>
+                        <div id="toursLinks">
+                            <a href="">ეროვნული ტურები</a>
+                            <a href="">საერთაშორისო ტურები</a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
-        
+
+        <!-- 2.1_2.socialsicons -->
+
+        <div id="socialsdiv">
+                    <div id="facdiv">
+                        <a onmouseover="toggleIcons()" href=""><img class="socialslogos" src="./imgs/img9.1.webp" alt="">
+                        <p id="socialsNames">Facebook</p></a>
+                    </div>
+                    <div id="twitdiv">
+                        <img class="socialslogos" src="./imgs/img9.4.jpg" alt="">
+                        <p id="twittern">Twitter</p>
+                    </div>
+                    <div id="instdiv">
+                        <img class="socialslogos" src="./imgs/img9.3.jpg" alt="">
+                        <p id="instagramn">Instagram</p>
+                    </div>
+                    <div id="linkdiv">
+                        <img class="socialslogos" src="./imgs/img9.5.png" alt="">
+                        <p id="linkedinn">LinkedIn</p>
+                    </div>
+                    <div id="youdiv">
+                        <img class="socialslogos" src="./imgs/img9.2.jpg" alt="">
+                        <p id="youtuben">Youtube</p>
+                    </div>
+                </div>
         <!-- 2.2.main -->
         
         <main>
@@ -146,76 +177,138 @@
                     </div>
                 </div>
             </div>
-            <div id="div6">
+            <div class="div6_7">
                 <a href="" id="div6maina">ადგილობრივი ტურები</a>
                 <div id="div6_1">
-                    <a href="" id="div6_1_1">
+                    <a href="" class="div6_1options">
                         <img src="./imgs/img7.1.jpg" alt="">
-                        <div id="div6_1_1_1">
-                            <p id="pdanishnuleba1">თბილისიდან: მცხეთა, ჯვარი, გორი, უფლისციხე, ტური გიდით</p>
-                            <p id="turisdro1">9 საათი</p>  
-                            <div id="div6_1_1_1_1">
-                                <div id="div6_1_1_1_1_1">
+                        <div class="div6_1options_1">
+                            <p class="pdanishnuleba">თბილისიდან: მცხეთა, ჯვარი, გორი, უფლისციხე, ტური გიდით</p>
+                            <p class="turisdro">9 საათი</p>  
+                            <div class="div6_1options_1_1">
+                                <div class="div6_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.9 <span style="color: rgb(83, 82, 82);">(329)</span></p> 
                                 </div>
-                                
                                 <p>₾40-დან</p>
                             </div>
                         </div>
                     </a>
-                    <a href="" id="div6_1_2">
+                    <a href="" class="div6_1options">
                         <img src="./imgs/img7.2.jpg" alt="">
-                        <div id="div6_1_2_1">
-                            <p id="pdanishnuleba2">თბილისიდან: ბორჯომი, რაბათი, ვარძა, ტური გიდით</p>
-                            <p id="turisdro2">14 საათი</p>  
-                            <div id="div6_1_2_1_1">
-                                <div id="div6_1_2_1_1_1">
+                        <div class="div6_1options_1">
+                            <p class="pdanishnuleba">თბილისიდან: ბორჯომი, რაბათი, ვარძა, ტური გიდით</p>
+                            <p class="turisdro">14 საათი</p>  
+                            <div class="div6_1options_1_1">
+                                <div class="div6_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.6 <span style="color: rgb(83, 82, 82);">(1425)</span></p> 
                                 </div>
-                                
                                 <p>₾70-დან</p>
                             </div>
                         </div>
                     </a>
-                    <a href="" id="div6_1_3">
+                    <a href="" class="div6_1options">
                         <img src="./imgs/img7.3.jpg" alt="">
-                        <div id="div6_1_3_1">
-                            <p id="pdanishnuleba3">თბილისიდან: კახეთის რეგიონი, თელავი, ყვარელი, სიღნაღი, ტური 7 ღვინის გასინჯვით</p>
-                            <p id="turisdro3">7 საათი</p>  
-                            <div id="div6_1_3_1_1">
-                                <div id="div6_1_3_1_1_1">
+                        <div class="div6_1options_1">
+                            <p class="pdanishnuleba">თბილისიდან: კახეთის რეგიონი, თელავი, ყვარელი, სიღნაღი, ტური 7 ღვინის გასინჯვით</p>
+                            <p class="turisdro">7 საათი</p>  
+                            <div class="div6_1options_1_1">
+                                <div class="div6_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.8 <span style="color: rgb(83, 82, 82);">(564)</span></p> 
                                 </div>
-                                
                                 <p>₾60-დან</p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div id="div7">
-                <a href="">საზღვარგარეთის ტურები</a>
-                <div id="div7_1">
-                    <div id="div7_1_1">
+            <div class="div6_7">
+                <a href="" id="div6maina">საზღვარგარეთის ტურები</a>
+                <div id="div6_1">
+                    <a href="" class="div6_1options">
+                        <img src="./imgs/img8.1.avif" alt="">
+                        <div class="div6_1options_1">
+                            <p class="pdanishnuleba">ერთ დღიანი ტური პარიზიდან მონ სან მიშელამდე</p>
+                            <p class="turisdro">14 საათი</p>  
+                            <div class="div6_1options_1_1">
+                                <div class="div6_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.4 <span style="color: rgb(83, 82, 82);">(4509)</span></p> 
+                                </div>
+                                <p>€100-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="div6_1options">
+                        <img src="./imgs/img8.2.jpg" alt="">
+                        <div class="div6_1options_1">
+                            <p class="pdanishnuleba">მიუნხენიდან: ნოიშვაშტაინი და ლინდერჰოფის სასახლე, მთელ დღიანი მოგზაურობა</p>
+                            <p class="turisdro">12 საათი</p>  
+                            <div class="div6_1options_1_1">
+                                <div class="div6_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.7 <span style="color: rgb(83, 82, 82);">(809)</span></p> 
+                                </div>
+                                <p>€80-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="div6_1options">
+                        <img src="./imgs/img8.3.avif" alt="">
+                        <div class="div6_1options_1">
+                            <p class="pdanishnuleba">ათენიდან: სანტორინის მთავარი სანახაობები, ერთ დღიანი ტური, ღვინის გასინჯვა, ოიას მზის ჩასვლა</p>
+                            <p class="turisdro">9 საათი</p>  
+                            <div class="div6_1options_1_1">
+                                <div class="div6_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.5 <span style="color: rgb(83, 82, 82);">(2018)</span></p> 
+                                </div>
+                                <p>€40-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
+        </main>
+        <footer>
+            <div id="footerdiv1">
+                <div id="footerdiv1_1">
+                    <a href="./finalProject.html">მთავარი</a>
+                    <a href="">ჩვენს შესახებ</a>
+                    <a href="">სიახლეები</a>
+                    <a href="">ბლოგები</a>
+                    <div id="footerdiv1_1_1">
+                        <a href="">ეროვნული ტურები</a>
+                        <a href="">საერთაშორისო ტურები</a> 
                     </div>
-                    <div id="div7_1_2">
-
+                    
+                </div>
+                <div id="footerdiv1_2">
+                    <div id="footerdiv1_2_1">
+                        <a href="">სურვილების სია</a>
+                        <a href="">კალათა</a>
+                        <a href="">პროფილი</a>
                     </div>
-                    <div id="div7_1_3">
-
+                    <div id="footerdiv1_2_2">
+                        <a href="">საიტის მოხმარების წესები</a>
+                        <a href="">მონაცემთა შეგროვების პირობები</a>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            
-            <div>
+            <div id="footerdiv2">
                 <p><i class="fa-regular fa-copyright"></i> 2025 ალექსანდრე პატარაია</p>
+                <div id="footerdiv2_1">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></i>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
         </footer>
+        <script src="./finalProject.js"></script>
     </body>
 </html>

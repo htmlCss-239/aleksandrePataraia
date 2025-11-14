@@ -65,7 +65,7 @@ header{
     overflow: visible;
 }
 
-#div2 div{
+#div2 i{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,10 +74,15 @@ header{
     padding: 10px;
     border-radius: 20px;
     gap: 5px;
+    position: relative;
+    color: var(--textis_feri1);
 }
 
-#div2 i{
-    color: var(--textis_feri1);
+.div2_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 #div2 a{
@@ -87,7 +92,7 @@ header{
     font-weight: bold;
 }
 
-#div2 div:hover{
+#div2 i:hover{
     background-color: #264b5e;
     color: #ebddc6;
     transition: 0.4s;
@@ -104,6 +109,7 @@ nav{
     padding-bottom: 0.5%;
     background-color: var(--textis_feri1);
     width: 100%;
+    gap: 20px;
 }
 
 nav a{
@@ -111,11 +117,20 @@ nav a{
     color: var(--fonis_feri1);
     border: #15313f 0.5px solid;
     padding: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
     font-size: var(--fontis_zoma2);
     display: flex;
     align-items: center;
+}
+
+nav p{
+    text-decoration: none;    
+    color: var(--fonis_feri1);
+    border: #15313f 0.5px solid;
+    padding: 10px;
+    font-size: var(--fontis_zoma2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 nav a:hover{
@@ -123,6 +138,158 @@ nav a:hover{
     color: #ebddc6;
     transition: 0.4s;
     transform: scale(1.2);
+}
+
+nav p:hover{
+    background-color: #264b5e;
+    color: #ebddc6;
+    transition: 0.4s;
+    transform: scale(1.2);
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+#toursDD{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#toursLinks{
+    display: none;
+    position: absolute;
+    z-index: 1100;
+    top: 50px;
+    background-color: var(--textis_feri1);
+}
+
+/* 2_3socials */
+
+#socialsdiv{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    z-index: 1100;
+}
+
+.socialslogos{
+    width: 35px;
+    height: 35px;
+}
+
+#socialsNames{
+    display: none;
+    text-decoration: none;
+    background-color: #1877f2;
+    width: auto;
+    height: 35px;
+    position: absolute;
+    color: var(--textis_feri1);
+}
+
+/* facebook */
+
+#facdiv{
+    position: relative;
+}
+
+#facebookn{
+    
+    display:none;
+}
+
+/* twitter */
+
+#twitdiv:hover{
+    transition-timing-function: linear;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#twittern{
+    background-color: #000000;
+    width: auto;
+    height: 35px;
+    display:none;
+}
+
+#twitdiv:hover #twittern{
+    align-items: center;
+    display: flex; 
+}
+
+/* instagram */
+
+#instdiv:hover{
+    transition-timing-function: linear;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#instagramn{
+    background-color: #5b32c7;
+    width: auto;
+    height: 35px;
+    display: none;
+}
+
+#instdiv:hover #instagramn{
+    align-items: center;
+    display: flex; 
+}
+
+/* linkedin */
+
+#linkdiv:hover{
+    transition-timing-function: linear;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#linkedinn{
+    background-color: #0c64c5;
+    width: auto;
+    height: 35px;
+    display: none;
+}
+
+#linkdiv:hover #linkedinn{
+    align-items: center;
+    display: flex; 
+}
+
+/* youtube */
+
+#youdiv:hover{
+    transition-timing-function: linear;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#youtuben{
+    background-color: #e02b28;
+    width: auto;
+    height: 35px;
+    display: none;
+}
+
+#youdiv:hover #youtuben{
+    align-items: center;
+    display: flex; 
 }
 
 /* 3.main */
@@ -454,7 +621,7 @@ main{
 
 /* 3.4.div6 */
 
-#div6{
+.div6_7{
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -477,7 +644,7 @@ main{
 
 /* 3.4.1.div6_1_1 */
 
-#div6_1_1{
+.div6_1options{
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -488,34 +655,35 @@ main{
     overflow: hidden;
 }
 
-#div6_1_1 img{
+.div6_1options img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom: var(--fonis_feri1) solid 1px;
+    height: 200px;
 }
 
-#div6_1_1 img:hover{
+.div6_1options img:hover{
     overflow: hidden;
     transform: scale(1.05);
     transition: 0.5s;
 }
 
-#div6_1_1_1{
+.div6_1options_1{
     display: flex;
     flex-direction: column;
     padding: 5px;
 }
 
-#pdanishnuleba1{
+.pdanishnuleba{
     font-size: 14px;
     font-weight: bold;
 }
 
-#turisdro1{
+.turisdro{
     font-size: 12px;
 }
 
-#div6_1_1_1_1{
+.div6_1options_1_1{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -523,122 +691,16 @@ main{
     font-size: 12px;
 }
 
-#div6_1_1_1_1_1{
+.div6_1options_1_1_1{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 
-/* 3.4.2.div6_1_2 */
+/* 3.5.div6_2 */
 
-#div6_1_2{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: var(--fonis_feri1);
-    width: 300px;
-    border: var(--fonis_feri1) solid 3px;
-    border-radius: 20px;    
-    overflow: hidden;
-}
 
-#div6_1_2 img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: var(--fonis_feri1) solid 1px;
-}
-
-#div6_1_2 img:hover{
-    overflow: hidden;
-    transform: scale(1.05);
-    transition: 0.5s;
-}
-
-#div6_1_2_1{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-
-#pdanishnuleba2{
-    font-size: 14px;
-    font-weight: bold;
-}
-
-#turisdro2{
-    font-size: 12px;
-}
-
-#div6_1_2_1_1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-}
-
-#div6_1_2_1_1_1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-/* 3.4.3.div6_1_3 */
-
-#div6_1_3{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: var(--fonis_feri1);
-    width: 300px;
-    border: var(--fonis_feri1) solid 3px;
-    border-radius: 20px;    
-    overflow: hidden;
-}
-
-#div6_1_3 img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: var(--fonis_feri1) solid 1px;
-}
-
-#div6_1_3 img:hover{
-    overflow: hidden;
-    transform: scale(1.05);
-    transition: 0.5s;
-}
-
-#div6_1_3_1{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-
-#pdanishnuleba3{
-    font-size: 14px;
-    font-weight: bold;
-}
-
-#turisdro3{
-    font-size: 12px;
-}
-
-#div6_1_3_1_1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-}
-
-#div6_1_3_1_1_1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
 
 /* 4.footer */
 
@@ -646,7 +708,72 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: var(--fonis_feri1);
     color: var(--textis_feri1);
+    padding: 10px;
+    padding-top: 30px;
+    border-top: var(--textis_feri1) solid 2px;
+}
+
+footer a{
+    color: var(--textis_feri1);
+    font-size: 14px;
+    font-weight: 100;
+    text-underline-offset: 4px;
+}
+
+#footerdiv1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 1px var(--textis_feri1);
+    border-bottom: solid 1px var(--textis_feri1);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#footerdiv1_1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#footerdiv1_1_1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 14px;
+}
+
+#footerdiv1_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footerdiv1_2_1{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+#footerdiv1_2_2{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+#footerdiv2{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#footerdiv2_1{
+    gap: 10px;
+    display: flex;
 }
