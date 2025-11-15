@@ -1,9 +1,39 @@
 /* 1.Overall */
 :root{
     --fonis_feri1: #15313f;
+    --fonis_feri2: #264b5e;
     --textis_feri1: #ebd2aa;
-    --fontis_zoma1: 13px;
-    --fontis_zoma2: 12px;
+    --textis_feri2: #ebddc6;
+    --zoma_500: 500px;
+    --zoma_400: 400px;
+    --zoma_320: 320px;
+    --zoma_300: 300px;
+    --zoma_240: 240px;
+    --zoma_200: 200px;
+    --zoma_180: 180px;
+    --zoma_160: 160px;
+    --zoma_150: 150px;
+    --zoma_120: 120px;
+    --zoma_115: 115px;
+    --zoma_100: 100px;
+    --zoma_75: 75px;
+    --zoma_70: 70px;
+    --zoma_60: 60px;
+    --zoma_55: 55px;
+    --zoma_50: 50px;
+    --zoma_40: 40px;
+    --zoma_35: 35px;
+    --zoma_30: 30px;
+    --zoma_20: 20px;
+    --zoma_15: 15px;
+    --zoma_14: 14px;
+    --zoma_13: 13px;
+    --zoma_12: 12px;
+    --zoma_11: 11px;
+    --zoma_10: 10px;
+    --zoma_5: 5px;
+    --zoma_1: 1px;
+    --zoma_0: 0;
 }
 
 @font-face {
@@ -12,7 +42,7 @@
 }
 
 body{
-    margin: 0;
+    margin: var(--zoma_0);
     height: 100%;
     width: 100%;
     font-family: mtavruli;
@@ -22,13 +52,13 @@ body{
 /* 2.Header */
 header{
     width: 100%;
-    height: 115px;
+    height: var(--zoma_115);
     position: fixed;
     z-index: 1000;
 }
 
 #divfullheader{
-    min-width: 320px;
+    min-width: var(--zoma_320);
     display: flex;
     flex-direction: column;
 }
@@ -40,20 +70,21 @@ header{
     align-items: center;
     width: 100%;
     background-color: var(--fonis_feri1);
-    height: 70px;
-    padding-top: 5px;
+    height: var(--zoma_70);
+    padding-top: var(--zoma_5);
 }
 
 /* 2.1.div1 */
 
 #div1{
-    padding-left: 1%;
+    padding-left: var(--zoma_10);
+    padding-right: var(--zoma_10);
     padding-bottom: 2%;
     padding-top: 2%;
 }
 
 #div1 img{
-    width: 70px;
+    width: var(--zoma_70);
 }
 
 /* 2.2.div2 */
@@ -62,16 +93,16 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2vh;
-    padding-right: 2vh;
+    gap: var(--zoma_10);
+    padding-right: var(--zoma_10);
     overflow: visible;
 }
 
 #div2 i{
-    border: var(--textis_feri1) solid 1px;
-    padding: 10px;
+    border: var(--textis_feri1) solid var(--zoma_1);
+    padding: var(--zoma_10);
     border-radius: 50%;
-    gap: 5px;
+    gap: var(--zoma_5);
     color: var(--textis_feri1);
 }
 
@@ -79,16 +110,16 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: var(--zoma_5);
     text-decoration: none;
     color: var(--textis_feri1);
-    font-size: var(--fontis_zoma1);
+    font-size: var(--zoma_13);
     font-weight: bold;
 }
 
 #div2 i:hover{
-    background-color: #264b5e;
-    color: #ebddc6;
+    background-color: var(--fonis_feri2);
+    color: var(--textis_feri2);
     transition: 0.4s;
     transform: scale(1.3);
     cursor: pointer;
@@ -100,20 +131,20 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-top: var(--zoma_5);
+    padding-bottom: var(--zoma_5);
     background: linear-gradient(180deg,rgba(21, 49, 63, 1) 0%, rgba(235, 210, 170, 1) 50%, rgba(21, 49, 63, 1) 100%);
     width: 100%;
-    gap: 20px;
-    height: 40px;
+    gap: var(--zoma_20);
+    height: var(--zoma_40);
 }
 
 nav a{
     text-decoration: none;    
     color: var(--fonis_feri1);
     border: #15313f 1px solid;
-    padding: 10px;
-    font-size: var(--fontis_zoma2);
+    padding: var(--zoma_10);
+    font-size: var(--zoma_12);
     display: flex;
     align-items: center;
     background-color: var(--textis_feri1);
@@ -122,29 +153,29 @@ nav a{
 nav p{
     text-decoration: none;    
     color: var(--fonis_feri1);
-    border: #15313f 0.5px solid;
-    padding: 10px;
-    font-size: var(--fontis_zoma2);
+    border: #15313f var(--zoma_1) solid;
+    padding: var(--zoma_10);
+    font-size: var(--zoma_12);
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: var(--zoma_5);
     background-color: var(--textis_feri1)
 }
 
 nav a:hover{
-    background-color: #264b5e;
-    color: #ebddc6;
+    background-color: var(--fonis_feri2);
+    color: var(--textis_feri2);
     transition: 0.4s;
     transform: scale(1.2);
 }
 
 nav p:hover{
-    background-color: #264b5e;
-    color: #ebddc6;
+    background-color: var(--fonis_feri2);
+    color: var(--textis_feri2);
     transition: 0.4s;
     transform: scale(1.2);
     cursor: pointer;
-    padding-right: 30px;
+    padding-right: var(--zoma_30);
 }
 
 #toursDD{
@@ -157,7 +188,7 @@ nav p:hover{
     display: none;
     position: absolute;
     z-index: 1100;
-    top: 50px;
+    top: var(--zoma_50);
     background-color: var(--textis_feri1);
 }
 
@@ -168,7 +199,7 @@ nav p:hover{
     flex-direction: row;
     align-items: center;
     position: fixed;
-    top: 300px;
+    top: var(--zoma_300);
     left: 0;
     z-index: 1100;
 }
@@ -176,15 +207,15 @@ nav p:hover{
 #socialsSideBar i{
     color: var(--textis_feri1);
     background-color: var(--fonis_feri1);
-    height: 55px;
-    width: 20px;
+    height: var(--zoma_55);
+    width: var(--zoma_20);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #socialsSideBar i.is-active{
-    transform: translateX(55px);
+    transform: translateX(var(--zoma_55));
 }
 
 #socialsSideBar i:hover{
@@ -196,12 +227,12 @@ nav p:hover{
     flex-direction: column;
     position: absolute;
     background-color: var(--fonis_feri1);
-    padding: 10px;
+    padding: var(--zoma_10);
 }
 
 .socialslogos{
-    width: 35px;
-    height: 35px;
+    width: var(--zoma_35);
+    height: var(--zoma_35);
 }
 
 #socialsDiv a:hover{
@@ -214,9 +245,9 @@ nav p:hover{
 main{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding-top: 115px;
-    padding-bottom: 40px;
+    padding-top: var(--zoma_115);
 }
 /* 3.1.searchBar */
 #div3{
@@ -225,7 +256,7 @@ main{
     justify-content: center;
     width: 100%;
     position: relative;
-    height: 400px;
+    height: var(--zoma_400);
     overflow: hidden;
 }
 
@@ -244,13 +275,13 @@ main{
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px; 
+  height: var(--zoma_400); 
 }
 
 #searchBarImgs img {
   position: absolute;
   width: 100%;
-  height: 400px;
+  height: var(--zoma_400);
   object-fit: cover;
   opacity: 0;
   animation-name: fadeCycle;
@@ -300,17 +331,17 @@ main{
 }
 
 #searchBar input{
-    width: 400px;
-    height: 50px;
-    border-radius: 30px;
+    width: var(--zoma_400);
+    height: var(--zoma_50);
+    border-radius: var(--zoma_30);
     border: none;
     font-family: mtavruli;
 }
 
 #searchBar button{
-    width: 50px;
-    height: 40px;
-    border-radius: 30px;
+    width: var(--zoma_50);
+    height: var(--zoma_40);
+    border-radius: var(--zoma_30);
     border: none;
     position: relative;
     right: 130%;
@@ -338,7 +369,7 @@ main{
 }
 
 .localCities{
-    font-size: 200%;
+    font-size: var(--zoma_35);
     color: var(--fonis_feri1);
     font-weight: bolder;
 }
@@ -346,7 +377,7 @@ main{
 .div4imgsdiv{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: var(--zoma_10);
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -365,15 +396,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 30px;
+    width: var(--zoma_200);
+    height: var(--zoma_30);
     background-color: var(--fonis_feri1);
     margin: 0;
 }
 
 .div4 img{
-    width: 200px;
-    height: 160px;
+    width: var(--zoma_200);
+    height: var(--zoma_160);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,8 +426,8 @@ main{
 .div5_6{
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
-    gap: 10px;
+    padding-top: var(--zoma_30);
+    gap: var(--zoma_10);
     align-items: center;
 }
 
@@ -404,34 +435,34 @@ main{
     text-decoration: none;
     color: var(--fonis_feri1);
     font-weight: bolder;
-    font-size: 30px;
+    font-size: var(--zoma_30);
 }
 
 #div5_1{
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: var(--zoma_20);
 }
 
-/* 3.3.1.div6_1_1 */
+/* 3.3.1.div5_1options */
 
 .div5_1options{
     display: flex;
     flex-direction: column;
     text-decoration: none;
     color: var(--fonis_feri1);
-    width: 300px;
+    width: var(--zoma_300);
     border: var(--fonis_feri1) solid 3px;
-    border-radius: 20px;    
+    border-radius: var(--zoma_20);    
     overflow: hidden;
     box-shadow: 5px 2px 3px var(--fonis_feri1), 7px 5px 4px var(--textis_feri1);
 }
 
 .div5_1options img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: var(--zoma_20);
+    border-top-right-radius: var(--zoma_20);
     border-bottom: var(--fonis_feri1) solid 1px;
-    height: 200px;
+    height: var(--zoma_200);
 }
 
 .div5_1options img:hover{
@@ -443,16 +474,16 @@ main{
 .div5_1options_1{
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: var(--zoma_5);
 }
 
 .pdanishnuleba{
-    font-size: 14px;
+    font-size: var(--zoma_14);
     font-weight: bold;
 }
 
 .turisdro{
-    font-size: 12px;
+    font-size: var(--zoma_12);
 }
 
 .div5_1options_1_1{
@@ -460,15 +491,108 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: var(--zoma_12);
 }
 
 .div5_1options_1_1_1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: var(--zoma_5);
 }
+
+/* 3.5.airlines */
+
+#div7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: var(--zoma_50);
+    gap: var(--zoma_10);
+    border: var(--zoma_10) double var(--fonis_feri1);
+    border-radius: 10%;
+    padding: var(--zoma_10);
+}
+
+#div7 p{
+    font-size: var(--zoma_14);
+    font-weight: bolder;
+    color: var(--fonis_feri1);
+
+}
+#div7_1{
+    display: flex;
+    align-items: center;
+}
+
+#div7_2{
+    display: flex;
+    flex-direction: column;
+}
+
+#div7_2 img{
+    width: var(--zoma_75);
+}
+
+/* 3.6.airplane */
+
+#div8{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: var(--zoma_100);
+    margin-top: var(--zoma_50);
+    height: var(--zoma_200);
+    border: var(--fonis_feri1) 2px solid;
+    background: linear-gradient(0deg,rgba(235, 221, 198, 1) 0%, rgba(38, 75, 94, 1) 100%);;
+}
+
+#div8 img{
+    transform: scale(0.5);
+    rotate: 18deg;
+    animation-name: planeFlight;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    opacity: 1;
+}
+
+#div8 img:hover{
+    transform: scale(0.7);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@keyframes planeFlight {
+    0% {
+        left: 0;
+        bottom: var(--zoma_50);
+    }
+
+    25% {
+        left: 20%;
+        bottom: var(--zoma_100);
+    }
+
+    50% {
+        left: 40%;
+        bottom: var(--zoma_50);
+    }
+
+    75% {
+        left: 60%;
+        bottom: var(--zoma_100);
+    }
+
+    100% {
+        left: 80%;
+        bottom: var(--zoma_50);
+    }
+}
+
 
 /* 4.footer */
 
@@ -479,14 +603,13 @@ footer{
     height: auto;
     background-color: var(--fonis_feri1);
     color: var(--textis_feri1);
-    padding: 10px;
-    padding-top: 30px;
+    padding: var(--zoma_10);
     border-top: var(--textis_feri1) solid 2px;
 }
 
 footer a{
     color: var(--textis_feri1);
-    font-size: 14px;
+    font-size: var(--zoma_14);
     font-weight: 100;
     text-underline-offset: 4px;
 }
@@ -497,22 +620,22 @@ footer a{
     justify-content: space-around;
     border-top: solid 1px var(--textis_feri1);
     border-bottom: solid 1px var(--textis_feri1);
-    padding-top: 15px;
-    padding-bottom: 20px;
-    gap: 100px;
+    padding-top: var(--zoma_15);
+    padding-bottom: var(--zoma_20);
+    gap: var(--zoma_100);
 }
 
 #footerdiv1_1{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--zoma_10);
 }
 
 #footerdiv1_1_1{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding-top: 14px;
+    gap: var(--zoma_10);
+    padding-top: var(--zoma_14);
 }
 
 #footerdiv1_2{
@@ -524,25 +647,25 @@ footer a{
 #footerdiv1_2_1{
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: var(--zoma_11);
 }
 
 #footerdiv1_2_2{
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: var(--zoma_11);
 }
 
 #footerdiv2{
     display: flex;
     flex-direction: row;
-    font-size: 11px;
+    font-size: var(--zoma_11);
     justify-content: space-around;
     align-items: center;
-    padding-top: 15px;
+    padding-top: var(--zoma_15);
 }
 
 #footerdiv2_1{
-    gap: 10px;
+    gap: var(--zoma_10);
     display: flex;
 }
