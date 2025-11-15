@@ -22,7 +22,7 @@ body{
 /* 2.Header */
 header{
     width: 100%;
-    height: 140px;
+    height: 115px;
     position: fixed;
     z-index: 1000;
 }
@@ -40,6 +40,8 @@ header{
     align-items: center;
     width: 100%;
     background-color: var(--fonis_feri1);
+    height: 70px;
+    padding-top: 5px;
 }
 
 /* 2.1.div1 */
@@ -51,7 +53,7 @@ header{
 }
 
 #div1 img{
-    width: 10vh;
+    width: 70px;
 }
 
 /* 2.2.div2 */
@@ -66,26 +68,18 @@ header{
 }
 
 #div2 i{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: var(--textis_feri1) solid 1px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 50%;
     gap: 5px;
-    position: relative;
     color: var(--textis_feri1);
 }
 
-.div2_1{
+#div2 a{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-}
-
-#div2 a{
     text-decoration: none;
     color: var(--textis_feri1);
     font-size: var(--fontis_zoma1);
@@ -103,23 +97,26 @@ header{
 /* 2.3.nav */
 nav{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    background-color: var(--textis_feri1);
+    background: linear-gradient(180deg,rgba(21, 49, 63, 1) 0%, rgba(235, 210, 170, 1) 50%, rgba(21, 49, 63, 1) 100%);
     width: 100%;
     gap: 20px;
+    height: 40px;
 }
 
 nav a{
     text-decoration: none;    
     color: var(--fonis_feri1);
-    border: #15313f 0.5px solid;
+    border: #15313f 1px solid;
     padding: 10px;
     font-size: var(--fontis_zoma2);
     display: flex;
     align-items: center;
+    background-color: var(--textis_feri1);
 }
 
 nav p{
@@ -131,6 +128,7 @@ nav p{
     display: flex;
     align-items: center;
     gap: 5px;
+    background-color: var(--textis_feri1)
 }
 
 nav a:hover{
@@ -165,13 +163,40 @@ nav p:hover{
 
 /* 2_3socials */
 
-#socialsdiv{
+#socialsSideBar{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     position: fixed;
-    top: 200px;
+    top: 300px;
     left: 0;
     z-index: 1100;
+}
+
+#socialsSideBar i{
+    color: var(--textis_feri1);
+    background-color: var(--fonis_feri1);
+    height: 55px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#socialsSideBar i.is-active{
+    transform: translateX(55px);
+}
+
+#socialsSideBar i:hover{
+    cursor: pointer;
+}
+
+#socialsDiv{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--fonis_feri1);
+    padding: 10px;
 }
 
 .socialslogos{
@@ -179,117 +204,9 @@ nav p:hover{
     height: 35px;
 }
 
-#socialsNames{
-    display: none;
-    text-decoration: none;
-    background-color: #1877f2;
-    width: auto;
-    height: 35px;
-    position: absolute;
-    color: var(--textis_feri1);
-}
-
-/* facebook */
-
-#facdiv{
-    position: relative;
-}
-
-#facebookn{
-    
-    display:none;
-}
-
-/* twitter */
-
-#twitdiv:hover{
-    transition-timing-function: linear;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#twittern{
-    background-color: #000000;
-    width: auto;
-    height: 35px;
-    display:none;
-}
-
-#twitdiv:hover #twittern{
-    align-items: center;
-    display: flex; 
-}
-
-/* instagram */
-
-#instdiv:hover{
-    transition-timing-function: linear;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#instagramn{
-    background-color: #5b32c7;
-    width: auto;
-    height: 35px;
-    display: none;
-}
-
-#instdiv:hover #instagramn{
-    align-items: center;
-    display: flex; 
-}
-
-/* linkedin */
-
-#linkdiv:hover{
-    transition-timing-function: linear;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#linkedinn{
-    background-color: #0c64c5;
-    width: auto;
-    height: 35px;
-    display: none;
-}
-
-#linkdiv:hover #linkedinn{
-    align-items: center;
-    display: flex; 
-}
-
-/* youtube */
-
-#youdiv:hover{
-    transition-timing-function: linear;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#youtuben{
-    background-color: #e02b28;
-    width: auto;
-    height: 35px;
-    display: none;
-}
-
-#youdiv:hover #youtuben{
-    align-items: center;
-    display: flex; 
+#socialsDiv a:hover{
+    transform: scale(1.5);
+    transition: 0.4s;
 }
 
 /* 3.main */
@@ -298,7 +215,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 140px;
+    padding-top: 115px;
     padding-bottom: 40px;
 }
 /* 3.1.searchBar */
@@ -308,7 +225,7 @@ main{
     justify-content: center;
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -319,7 +236,6 @@ main{
     left: 50%;                 
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: 900;
     justify-content: center;
 }
 
@@ -409,9 +325,9 @@ main{
     transform: scale(1.2);
 }
 
-/* 3.2.georgian_cities */
+/* 3.2.georgian_cities+international_cities*/
 
-#div4{
+.div4{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,24 +337,30 @@ main{
     overflow: visible;
 }
 
-#div4 p{
-    padding-left: 2%;
+.localCities{
     font-size: 200%;
     color: var(--fonis_feri1);
     font-weight: bolder;
 }
 
-#div4imgsdiv{
+.div4imgsdiv{
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
-#div4 a{
+.div4imgsdiv a{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 2px 3px var(--fonis_feri1), 7px 5px 4px var(--textis_feri1);
     text-decoration: none;
+}
+
+.div4imgsdiv p{
     color: var(--textis_feri1);
     display: flex;
     align-items: center;
@@ -446,182 +368,31 @@ main{
     width: 200px;
     height: 30px;
     background-color: var(--fonis_feri1);
+    margin: 0;
 }
 
-#div4 div{
+.div4 img{
     width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-}
-
-#div4_1{
-    background: url(./imgs/img5.1.jpg);
-}
-
-#div4_2{
-    background: url(./imgs/img5.2.webp);
-}
-
-#div4_3{
-    background: url(./imgs/img5.3.jpg);
-}
-
-#div4_4{
-    background: url(./imgs/img5.4.jpg);
-}
-
-#div4_5{
-    background: url(./imgs/img5.5.jpg);
-}
-
-#div4_1:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#div4_2:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#div4_3:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#div4_4:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#div4_5:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-/* 3.3.international_cities */
-
-#div5{
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-}
-
-#div5 p{
-    padding-left: 2%;
-    font-size: 200%;
-    color: var(--fonis_feri1);
-    font-weight: bolder;
-}
-
-#div5imgsdiv{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-#div5 a{
-    text-decoration: none;
-    color: var(--textis_feri1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 30px;
-    background-color: var(--fonis_feri1);
-}
-
-#div5 div{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     background-position: center;
     background-size: cover;
     opacity: 1;
+    
 }
 
-#div5_1{
-    background: url(./imgs/img6.1.jpg);
-}
-
-#div5_2{
-    background: url(./imgs/img6.2.avif);
-}
-
-#div5_3{
-    background: url(./imgs/img6.3.jpg);
-}
-
-#div5_4{
-    background: url(./imgs/img6.4.webp);
-}
-
-#div5_5{
-    background: url(./imgs/img6.5.webp);
-}
-
-#div5_1:hover{
+.div4 a:hover{
     opacity: 0.8;
     transform: scale(1.05);
     transition: 0.3s;
     cursor: pointer;
 }
 
-#div5_2:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
+/* 3.3.div5 */
 
-#div5_3:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#div5_4:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#div5_5:hover{
-    opacity: 0.8;
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-/* 3.4.div6 */
-
-.div6_7{
+.div5_6{
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -629,22 +400,22 @@ main{
     align-items: center;
 }
 
-#div6maina{
+#div5maina{
     text-decoration: none;
     color: var(--fonis_feri1);
     font-weight: bolder;
     font-size: 30px;
 }
 
-#div6_1{
+#div5_1{
     display: flex;
     flex-direction: row;
     gap:20px;
 }
 
-/* 3.4.1.div6_1_1 */
+/* 3.3.1.div6_1_1 */
 
-.div6_1options{
+.div5_1options{
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -653,22 +424,23 @@ main{
     border: var(--fonis_feri1) solid 3px;
     border-radius: 20px;    
     overflow: hidden;
+    box-shadow: 5px 2px 3px var(--fonis_feri1), 7px 5px 4px var(--textis_feri1);
 }
 
-.div6_1options img{
+.div5_1options img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom: var(--fonis_feri1) solid 1px;
     height: 200px;
 }
 
-.div6_1options img:hover{
+.div5_1options img:hover{
     overflow: hidden;
     transform: scale(1.05);
     transition: 0.5s;
 }
 
-.div6_1options_1{
+.div5_1options_1{
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -683,7 +455,7 @@ main{
     font-size: 12px;
 }
 
-.div6_1options_1_1{
+.div5_1options_1_1{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -691,16 +463,12 @@ main{
     font-size: 12px;
 }
 
-.div6_1options_1_1_1{
+.div5_1options_1_1_1{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
-
-/* 3.5.div6_2 */
-
-
 
 /* 4.footer */
 
@@ -731,6 +499,7 @@ footer a{
     border-bottom: solid 1px var(--textis_feri1);
     padding-top: 15px;
     padding-bottom: 20px;
+    gap: 100px;
 }
 
 #footerdiv1_1{
@@ -767,7 +536,7 @@ footer a{
 #footerdiv2{
     display: flex;
     flex-direction: row;
-    font-size: 12px;
+    font-size: 11px;
     justify-content: space-around;
     align-items: center;
     padding-top: 15px;

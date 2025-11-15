@@ -47,34 +47,19 @@
                     
                     <!-- 2.1.2.div2  -->
                     
-                    <div id="div2">
-                        <div class="div2_1">
-                            <i class="fa-regular fa-heart" ></i>
-                            <a href="">სურვილების სია</a>
-                        </div>
-                        <div class="div2_1">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <a href="">კალათა</a>
-                        </div>
-                        <div class="div2_1">
-                            <i class="fa-regular fa-user"></i>
-                            <a href="">პროფილი</a>
-                        </div>
-                        <div class="div2_1">
-                            <i class="fa-solid fa-language"></i>
-                            <a href="">ენა</a>
-                        </div>
-                        <div class="div2_1">
-                            <i class="fa-regular fa-moon"></i>
-                            <a href="">ფონი</a>
-                        </div>
+                    <div id="div2">                        
+                        <a href=""><i class="fa-regular fa-heart" ></i>სურვილების სია</a>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i>კალათა</a>                       
+                        <a href=""><i class="fa-regular fa-user"></i>პროფილი</a>
+                        <a href=""><i class="fa-solid fa-language"></i>ენა</a>
+                        <a href=""><i class="fa-regular fa-moon"></i>ფონი</a>
                     </div>
                 </div>
 
                 <!-- 2.1.3.nav -->
 
                 <nav>
-                    <a href="">მთავარი</a>
+                    <a href="./finalProject.html">მთავარი</a>
                     <a href="">ჩვენს შესახებ</a>
                     <a href="">სიახლეები</a>
                     <a href="">კონტაქტი</a>
@@ -91,28 +76,27 @@
 
         <!-- 2.1_2.socialsicons -->
 
-        <div id="socialsdiv">
-                    <div id="facdiv">
-                        <a onmouseover="toggleIcons()" href=""><img class="socialslogos" src="./imgs/img9.1.webp" alt="">
-                        <p id="socialsNames">Facebook</p></a>
-                    </div>
-                    <div id="twitdiv">
-                        <img class="socialslogos" src="./imgs/img9.4.jpg" alt="">
-                        <p id="twittern">Twitter</p>
-                    </div>
-                    <div id="instdiv">
-                        <img class="socialslogos" src="./imgs/img9.3.jpg" alt="">
-                        <p id="instagramn">Instagram</p>
-                    </div>
-                    <div id="linkdiv">
-                        <img class="socialslogos" src="./imgs/img9.5.png" alt="">
-                        <p id="linkedinn">LinkedIn</p>
-                    </div>
-                    <div id="youdiv">
-                        <img class="socialslogos" src="./imgs/img9.2.jpg" alt="">
-                        <p id="youtuben">Youtube</p>
-                    </div>
-                </div>
+        <div onclick="toggleIcons()" id="socialsSideBar">
+            <div id="socialsDiv">
+                <a  href="https://www.facebook.com/">
+                    <img class="socialslogos" src="./imgs/img9.1.webp" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="socialslogos" src="./imgs/img9.3.jpg" alt="">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img class="socialslogos" src="./imgs/img9.2.jpg" alt="">
+                </a>
+                <a href="https://x.com/">
+                    <img class="socialslogos" src="./imgs/img9.4.jpg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img class="socialslogos" src="./imgs/img9.5.png" alt="">
+                </a>
+            </div>
+            <i class="fa-solid fa-angle-right" id="rightArrow"></i>
+        </div>
+
         <!-- 2.2.main -->
         
         <main>
@@ -132,61 +116,74 @@
                 </div>
             </div>
             
-            <!-- 2.2.2.div4 -->
+            <!-- 2.2.2.div4.1 -->
 
-            <div id="div4">
-                <p>თქვენთან ახლოს მდებარე ქალაქები</p>
-                <div id="div4imgsdiv">
-                    <div id="div4_1">
-                        <a href="">მცხეთა</a>
-                    </div>
-                    <div id="div4_2">
-                        <a href="">გორი</a>
-                    </div>
-                    <div id="div4_3">
-                        <a href="">ქუთაისი</a>
-                    </div>
-                    <div id="div4_4">
-                        <a href="">ახალციხე</a>
-                    </div>
-                    <div id="div4_5">
-                        <a href="">მესტია</a>
-                    </div>
+            <div class="div4">
+                <p class="localCities">თქვენთან ახლოს მდებარე ქალაქები</p>
+                <div class="div4imgsdiv">
+                    <a href="">
+                        <img src="./imgs/img5.1.jpg" alt="">
+                        <p>მცხეთა</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.2.webp" alt="">
+                        <p>გორი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.3.jpg" alt="">    
+                        <p>ქუთაისი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.4.jpg" alt="">
+                        <p>ახალციხე</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.5.jpg" alt="">
+                        <p>მესტია</p>
+                    </a>
                 </div>
             </div>
 
-            <!-- 2.2.3.div5 -->
+            <!-- 2.2.3.div4.2 -->
 
-            <div id="div5">
-                <p>ქალაქები მსოფლიოს გარშემო</p>
-                <div id="div5imgsdiv">
-                    <div id="div5_1">
-                        <a href="">პარიზი</a>
-                    </div>
-                    <div id="div5_2">
-                        <a href="">რომი</a>
-                    </div>
-                    <div id="div5_3">
-                        <a href="">ლონდონი</a>
-                    </div>
-                    <div id="div5_4">
-                        <a href="">ბარსელონა</a>
-                    </div>
-                    <div id="div5_5">
-                        <a href="">სტამბული</a>
-                    </div>
+            <div class="div4">
+                <p class="localCities">ქალაქები მსოფლიოს გარშემო</p>
+                <div class="div4imgsdiv">
+                    <a href="">
+                        <img src="./imgs/img6.1.jpg" alt="">
+                        <p>პარიზი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.2.avif" alt="">
+                        <p>რომი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.3.jpg" alt="">    
+                        <p>ლონდონი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.4.webp" alt="">
+                        <p>ბარსელონა</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.5.webp" alt="">
+                        <p>სტამბული</p>
+                    </a>
                 </div>
             </div>
-            <div class="div6_7">
-                <a href="" id="div6maina">ადგილობრივი ტურები</a>
-                <div id="div6_1">
-                    <a href="" class="div6_1options">
+
+            <!-- 2.2.4.div5 -->
+
+            <div class="div5_6">
+                <a href="" id="div5maina">ადგილობრივი ტურები</a>
+                <div id="div5_1">
+                    <a href="" class="div5_1options">
                         <img src="./imgs/img7.1.jpg" alt="">
-                        <div class="div6_1options_1">
+                        <div class="div5_1options_1">
                             <p class="pdanishnuleba">თბილისიდან: მცხეთა, ჯვარი, გორი, უფლისციხე, ტური გიდით</p>
                             <p class="turisdro">9 საათი</p>  
-                            <div class="div6_1options_1_1">
-                                <div class="div6_1options_1_1_1">
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.9 <span style="color: rgb(83, 82, 82);">(329)</span></p> 
                                 </div>
@@ -194,13 +191,13 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="div6_1options">
+                    <a href="" class="div5_1options">
                         <img src="./imgs/img7.2.jpg" alt="">
-                        <div class="div6_1options_1">
+                        <div class="div5_1options_1">
                             <p class="pdanishnuleba">თბილისიდან: ბორჯომი, რაბათი, ვარძა, ტური გიდით</p>
                             <p class="turisdro">14 საათი</p>  
-                            <div class="div6_1options_1_1">
-                                <div class="div6_1options_1_1_1">
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.6 <span style="color: rgb(83, 82, 82);">(1425)</span></p> 
                                 </div>
@@ -208,13 +205,13 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="div6_1options">
+                    <a href="" class="div5_1options">
                         <img src="./imgs/img7.3.jpg" alt="">
-                        <div class="div6_1options_1">
+                        <div class="div5_1options_1">
                             <p class="pdanishnuleba">თბილისიდან: კახეთის რეგიონი, თელავი, ყვარელი, სიღნაღი, ტური 7 ღვინის გასინჯვით</p>
                             <p class="turisdro">7 საათი</p>  
-                            <div class="div6_1options_1_1">
-                                <div class="div6_1options_1_1_1">
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.8 <span style="color: rgb(83, 82, 82);">(564)</span></p> 
                                 </div>
@@ -224,16 +221,19 @@
                     </a>
                 </div>
             </div>
-            <div class="div6_7">
-                <a href="" id="div6maina">საზღვარგარეთის ტურები</a>
-                <div id="div6_1">
-                    <a href="" class="div6_1options">
+
+            <!-- 2.2.4.div7 -->
+
+            <div class="div5_6">
+                <a href="" id="div5maina">საზღვარგარეთის ტურები</a>
+                <div id="div5_1">
+                    <a href="" class="div5_1options">
                         <img src="./imgs/img8.1.avif" alt="">
-                        <div class="div6_1options_1">
+                        <div class="div5_1options_1">
                             <p class="pdanishnuleba">ერთ დღიანი ტური პარიზიდან მონ სან მიშელამდე</p>
                             <p class="turisdro">14 საათი</p>  
-                            <div class="div6_1options_1_1">
-                                <div class="div6_1options_1_1_1">
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.4 <span style="color: rgb(83, 82, 82);">(4509)</span></p> 
                                 </div>
@@ -241,13 +241,13 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="div6_1options">
+                    <a href="" class="div5_1options">
                         <img src="./imgs/img8.2.jpg" alt="">
-                        <div class="div6_1options_1">
+                        <div class="div5_1options_1">
                             <p class="pdanishnuleba">მიუნხენიდან: ნოიშვაშტაინი და ლინდერჰოფის სასახლე, მთელ დღიანი მოგზაურობა</p>
                             <p class="turisdro">12 საათი</p>  
-                            <div class="div6_1options_1_1">
-                                <div class="div6_1options_1_1_1">
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.7 <span style="color: rgb(83, 82, 82);">(809)</span></p> 
                                 </div>
@@ -255,13 +255,13 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="div6_1options">
+                    <a href="" class="div5_1options">
                         <img src="./imgs/img8.3.avif" alt="">
-                        <div class="div6_1options_1">
+                        <div class="div5_1options_1">
                             <p class="pdanishnuleba">ათენიდან: სანტორინის მთავარი სანახაობები, ერთ დღიანი ტური, ღვინის გასინჯვა, ოიას მზის ჩასვლა</p>
                             <p class="turisdro">9 საათი</p>  
-                            <div class="div6_1options_1_1">
-                                <div class="div6_1options_1_1_1">
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
                                     <i class="fa-solid fa-star"></i>
                                     <p>4.5 <span style="color: rgb(83, 82, 82);">(2018)</span></p> 
                                 </div>
@@ -271,8 +271,10 @@
                     </a>
                 </div>
             </div>
-
         </main>
+
+        <!-- 2.3.footer -->
+
         <footer>
             <div id="footerdiv1">
                 <div id="footerdiv1_1">

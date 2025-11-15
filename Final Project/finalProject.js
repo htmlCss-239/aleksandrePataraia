@@ -9,15 +9,19 @@ function toggleTours(){
 }
 
 function toggleIcons(){
-    const pTag = document.getElementById('socialsNames');
+    let links = document.getElementById('socialsDiv');
 
-    const pTagDisplayState = pTag.style.display;
-
-    if(pTagDisplayState === 'none'){
-        pTag.style.display = 'inline';
+    if(links.style.display === 'flex'){
+        links.style.display = 'none';
     } else {
-        pTag.style.display = 'none';
+        links.style.display = 'flex';
     }
 }
+
+const icon = document.getElementById('rightArrow');
+
+icon.addEventListener('click', function() {
+  icon.classList.toggle('is-active');
+});
 
 
