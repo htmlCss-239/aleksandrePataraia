@@ -838,6 +838,20 @@ footer a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding: var(--zoma_40);
     text-align: justify;
+    flex-wrap: wrap;
+}
+
+#Cadiv3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--zoma_100);
+}
+
+#wishlistimg{
+    width: var(--zoma_200);
 }
