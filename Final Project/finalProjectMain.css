@@ -4,6 +4,11 @@
     --fonis_feri2: #264b5e;
     --textis_feri1: #ebd2aa;
     --textis_feri2: #ebddc6;
+    --modzraobis_procenti_0: 0%;
+    --modzraobis_procenti_20: 20%;
+    --modzraobis_procenti_40: 40%;
+    --modzraobis_procenti_60: 60%;
+    --modzraobis_procenti_80: 80%;
     --zoma_500: 500px;
     --zoma_400: 400px;
     --zoma_320: 320px;
@@ -41,8 +46,116 @@
     src: url(./fonts/bpg_extrasquare_mtavruli_2009.ttf);
 }
 
-body{
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    :root{
+        /* x0.8 */
+        --modzraobis_procenti_0: 0%;
+        --modzraobis_procenti_20: 15%;
+        --modzraobis_procenti_40: 25%;
+        --modzraobis_procenti_60: 35%;
+        --modzraobis_procenti_80: 45%;
+        --zoma_500: 400px;
+        --zoma_400: 320px;
+        --zoma_320: 256px;
+        --zoma_300: 240px;
+        --zoma_240: 192px;
+        --zoma_200: 160px;
+        --zoma_180: 144px;
+        --zoma_160: 128px;
+        --zoma_150: 120px;
+        --zoma_120: 96px;
+        --zoma_115: 92px;
+        --zoma_100: 80px;
+        --zoma_75: 60px;
+        --zoma_70: 56px;
+        --zoma_60: 48px;
+        --zoma_55: 44px;
+        --zoma_50: 40px;
+        --zoma_40: 32px;
+        --zoma_35: 28px;
+        --zoma_30: 24px;
+        --zoma_20: 16px;
+        --zoma_15: 12px;
+        --zoma_14: 11.2px;
+        --zoma_13: 10.4px;
+        --zoma_12: 9.6px;
+        --zoma_11: 8.8px;
+        --zoma_10: 8px;
+        --zoma_5: 4px;
+        --zoma_1: 1px;
+        --zoma_0: 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    :root{
+        /* x0.8 */
+        --modzraobis_procenti_0: 0%;
+        --modzraobis_procenti_20: 8%;
+        --modzraobis_procenti_40: 16%;
+        --modzraobis_procenti_60: 24%;
+        --modzraobis_procenti_80: 32%;
+        --zoma_500: 320px;
+        --zoma_400: 256px;
+        --zoma_320: 204.8px;
+        --zoma_300: 192px;
+        --zoma_240: 153.6px;
+        --zoma_200: 128px;
+        --zoma_180: 115.2px;
+        --zoma_160: 102.4px;
+        --zoma_150: 96px;
+        --zoma_120: 76.8px;
+        --zoma_115: 73.6px;
+        --zoma_100: 64px;
+        --zoma_75: 48px;
+        --zoma_70: 44.8px;
+        --zoma_60: 38.4px;
+        --zoma_55: 35.2px;
+        --zoma_50: 32px;
+        --zoma_40: 25.6px;
+        --zoma_35: 22.4px;
+        --zoma_30: 19.2px;
+        --zoma_20: 12.8px;
+        --zoma_15: 9.6px;
+        --zoma_14: 8.96px;
+        --zoma_13: 8.32px;
+        --zoma_12: 7.68px;
+        --zoma_11: 7.04px;
+        --zoma_10: 6.4px;
+        --zoma_5: 3.2px;
+        --zoma_1: 1px;
+        --zoma_0: 0;
+    }
+
+    .div4 {
+        align-items: flex-start; 
+        padding: 0 var(--zoma_10); 
+    }
+    
+    .div4imgsdiv {
+        justify-content: flex-start; 
+        margin-left: 0;
+        flex-shrink: 0; 
+        flex-wrap: nowrap; 
+    }
+    
+    .div4imgsdiv a:first-child{
+        margin-left: 0;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body, html{
     margin: var(--zoma_0);
+    padding: var(--zoma_0);
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
     font-family: mtavruli;
@@ -52,13 +165,13 @@ body{
 /* 2.Header */
 header{
     width: 100%;
-    height: var(--zoma_115);
+    height: var(--zoma_150);
     position: fixed;
     z-index: 1000;
 }
 
 #divfullheader{
-    min-width: var(--zoma_320);
+    min-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +179,8 @@ header{
 #div0{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: var(--zoma_100);
     align-items: center;
     width: 100%;
     background-color: var(--fonis_feri1);
@@ -75,13 +189,6 @@ header{
 }
 
 /* 2.1.div1 */
-
-#div1{
-    padding-left: var(--zoma_10);
-    padding-right: var(--zoma_10);
-    padding-bottom: 2%;
-    padding-top: 2%;
-}
 
 #div1 img{
     width: var(--zoma_70);
@@ -104,6 +211,11 @@ header{
     border-radius: 50%;
     gap: var(--zoma_5);
     color: var(--textis_feri1);
+    width: var(--zoma_40);
+    height: var(--zoma_40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #div2 a{
@@ -131,12 +243,12 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: var(--zoma_5);
-    padding-bottom: var(--zoma_5);
+    padding-top: var(--zoma_10);
+    padding-bottom: var(--zoma_10);
     background: linear-gradient(180deg,rgba(21, 49, 63, 1) 0%, rgba(235, 210, 170, 1) 50%, rgba(21, 49, 63, 1) 100%);
     width: 100%;
     gap: var(--zoma_20);
-    height: var(--zoma_40);
+    height: var(--zoma_50);
 }
 
 nav a{
@@ -246,6 +358,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding-top: var(--zoma_115);
 }
@@ -382,6 +495,12 @@ main{
     align-items: center;
     width: 100%;
     height: 100%;
+    overflow-x: scroll;
+    flex-shrink: 0;
+}
+
+.div4imgsdiv a:first-child{
+    margin-left: var(--zoma_20);
 }
 
 .div4imgsdiv a{
@@ -396,15 +515,16 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--zoma_200);
+    width: var(--zoma_160);
     height: var(--zoma_30);
     background-color: var(--fonis_feri1);
     margin: 0;
+    padding-left: var(--zoma_15);
 }
 
 .div4 img{
-    width: var(--zoma_200);
-    height: var(--zoma_160);
+    width: var(--zoma_160);
+    height: var(--zoma_120);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -429,19 +549,25 @@ main{
     padding-top: var(--zoma_30);
     gap: var(--zoma_10);
     align-items: center;
+    overflow-x: scroll;
 }
 
-#div5maina{
+.div5maina{
     text-decoration: none;
     color: var(--fonis_feri1);
     font-weight: bolder;
     font-size: var(--zoma_30);
 }
 
-#div5_1{
+.div5_1{
     display: flex;
     flex-direction: row;
     gap: var(--zoma_20);
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0 var(--zoma_20);
+    margin: 0;
 }
 
 /* 3.3.1.div5_1options */
@@ -456,6 +582,8 @@ main{
     border-radius: var(--zoma_20);    
     overflow: hidden;
     box-shadow: 5px 2px 3px var(--fonis_feri1), 7px 5px 4px var(--textis_feri1);
+    flex-shrink: 0;
+    width: var(--zoma_300);
 }
 
 .div5_1options img{
@@ -542,6 +670,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    overflow: hidden;
     padding-top: var(--zoma_100);
     margin-top: var(--zoma_50);
     height: var(--zoma_200);
@@ -568,27 +697,27 @@ main{
 
 @keyframes planeFlight {
     0% {
-        left: 0;
+        left: var(--modzraobis_procenti_0);
         bottom: var(--zoma_50);
     }
 
     25% {
-        left: 20%;
+        left: var(--modzraobis_procenti_20);
         bottom: var(--zoma_100);
     }
 
     50% {
-        left: 40%;
+        left: var(--modzraobis_procenti_40);
         bottom: var(--zoma_50);
     }
 
     75% {
-        left: 60%;
+        left: var(--modzraobis_procenti_60);
         bottom: var(--zoma_100);
     }
 
     100% {
-        left: 80%;
+        left: var(--modzraobis_procenti_80);
         bottom: var(--zoma_50);
     }
 }
