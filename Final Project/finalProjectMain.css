@@ -46,6 +46,20 @@
     src: url(./fonts/bpg_extrasquare_mtavruli_2009.ttf);
 }
 
+
+@font-face {
+    font-family: Stacks;
+    src: url(./fonts/StackSansText-VariableFont_wght.ttf);
+}
+
+:lang(en) body, :lang(en) p{
+    font-family: Stacks;
+}
+
+:lang(en) #searchBar input{
+    font-family: Stacks;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     :root{
         /* x0.8 */
@@ -797,4 +811,33 @@ footer a{
 #footerdiv2_1{
     gap: var(--zoma_10);
     display: flex;
+}
+
+/* 5.aboutUs */
+#AUdiv3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--zoma_40);
+    text-align: justify;
+}
+
+#Ndiv3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--zoma_40);
+    text-align: justify;
+}
+
+#Ndiv3 table, th, tr, td{
+    padding: var(--zoma_10);
+}
+
+#Cdiv3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--zoma_40);
+    text-align: justify;
 }
