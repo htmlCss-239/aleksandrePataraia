@@ -85,12 +85,12 @@
         
         <main> 
             <div id="Prdiv2">
-                <h2>ავტორიზაციის გავლა</h2>
+                <h2>ავტორიზაცია</h2>
                 <form id="logForm" action="/login" target="_blank" method="post" onsubmit="checkPassword(event)">
                     <label class="textLabel" for="logEmail">მეილი</label>
                     <input class="textInput" type="email" name="logEmail" placeholder="შეიყვანეთ თქვენი მეილი">
                     <label for="logPassword">პაროლი</label>
-                    <input class="textInput" type="password" name="logPassword" placeholder="შეიყვანეთ თქვენი პაროლი">
+                    <input id="passwordInput" type="password" name="logPassword" placeholder="შეიყვანეთ თქვენი პაროლი">
                     <button type="submit">შესვლა</button>
                 </form>
                 <form id="checkForm" action="">

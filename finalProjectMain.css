@@ -1394,6 +1394,12 @@ footer a{
     color: var(--fonis_feri1);
 }
 
+#passwordInput{
+    width: var(--zoma_300);
+    height: var(--zoma_40);
+    font-family: mtavruli;
+}
+
 #Prdiv2 button{
     width: var(--zoma_100);
     border-radius: var(--zoma_10);
