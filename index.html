@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ka">
+    
+    <!-- 1.head  -->
+    
+    <head>
+        
+        <!-- 1.1.main meta tags -->
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="აღმოაჩინეთ საქართველოს საუკეთესო ტურები: თბილისი, მცხეთა, კახეთი (ღვინის ტურები), ვარძია და მაღალმთიანი რეგიონები. იპოვეთ თქვენი იდეალური ადგილობრივი ან საერთაშორისო მოგზაურობა - ჩვენ გთავაზობთ სრულ ტურისტულ მომსახურებას, გიდებსა და დაუვიწყარ თავგადასავლებს.">
+        <meta name="keywords" content="ტურები საქართველოში, მოგზაურობა საქართველოში, საზღვარგარეთის ტურები, ტურები ევროპაში, ტურისტული კომპანია, ტურ ოპერატორი, გიდი საქართველოში, ტურისტული გზამკვლევი, ეროვნული ტურები, სათავგადასავლო ტურები, კულტურული ტურები, ღვინის ტურები, ერთდღიანი ტურები, თბილისის ტურები, მცხეთა, გორი, უფლისციხე, ვარძია, ბორჯომი, კახეთის ტურები, სიღნაღი, თელავი, მესტია, იაფი ტურები, საუკეთესო ტურები, დასვენება საქართველოში, ავიაბილეთები, სამოგზაურო მომსახურება">
+        <meta name="author" content="ალექსანდრე პატარაია">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 1.2.socials meta tag -->
+        
+        <meta property="og: type" content="website">
+        <meta property="og: locale" content="ka">
+        <meta property="og: title" content="ყველა ტური ერთ საიტზე">
+        <meta property="og: description" content="აღმოაჩინეთ საქართველოს საუკეთესო ტურები: თბილისი, მცხეთა, კახეთი (ღვინის ტურები), ვარძია და მაღალმთიანი რეგიონები. იპოვეთ თქვენი იდეალური ადგილობრივი ან საერთაშორისო მოგზაურობა - ჩვენ გთავაზობთ სრულ ტურისტულ მომსახურებას, გიდებსა და დაუვიწყარ თავგადასავლებს.">
+        <meta property="og: url" content="">
+        <meta property="og: image" content="">
+        <meta property="og: site-name" content="Turoperatori.ge">
+        
+        <!-- 1.3.other links -->
+        
+        <link rel="stylesheet" href="./finalProjectMain.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="./imgs/1.Logo.png">
+    </head>
+    
+    <!-- 2.body  -->
+    
+    <body>
+        
+        <!-- 2.1.header  -->
+        
+        <header>
+            <div id="divfullheader">
+                <!-- 2.1.1.div1  -->
+                
+                <div id="div0">
+                    <div id="div1">
+                        <a href="./index.html"><img src="./imgs/1.Logo.png" alt=""></a> 
+                    </div>
+                    
+                    <!-- 2.1.2.div2  -->
+                    
+                    <div id="div2">                        
+                        <a href="./wishListGeo.html"><i class="fa-regular fa-heart" ></i>სურვილების სია</a>
+                        <a href="./cartGeo.html"><i class="fa-solid fa-cart-shopping"></i>კალათა</a>                       
+                        <a href="./profileGeo.html"><i class="fa-regular fa-user"></i>პროფილი</a>
+                        <a href="./indexEng.html"><i class="fa-solid fa-language"></i>ენა</a>
+                        <a href=""><i class="fa-regular fa-moon"></i>ფონი</a>
+                    </div>
+                </div>
+
+                <!-- 2.1.3.nav -->
+
+                <nav>
+                    <a href="./index.html">მთავარი</a>
+                    <a href="./aboutUsGeo.html">ჩვენს შესახებ</a>
+                    <a href="./newsGeo.html">სიახლეები</a>
+                    <a href="./contactGeo.html">კონტაქტი</a>
+                    <div id="toursDD">
+                        <p onclick="toggleTours()" href="">ტურები <i class="fa-solid fa-angle-down"></i></p>
+                        <div id="toursLinks">
+                            <a href="">ეროვნული ტურები</a>
+                            <a href="">საერთაშორისო ტურები</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 2.1_2.socialsicons -->
+
+        <div onclick="toggleIcons()" id="socialsSideBar">
+            <div id="socialsDiv">
+                <a  href="https://www.facebook.com/">
+                    <img class="socialslogos" src="./imgs/img9.1.webp" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="socialslogos" src="./imgs/img9.3.jpg" alt="">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img class="socialslogos" src="./imgs/img9.2.jpg" alt="">
+                </a>
+                <a href="https://x.com/">
+                    <img class="socialslogos" src="./imgs/img9.4.jpg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img class="socialslogos" src="./imgs/img9.5.png" alt="">
+                </a>
+            </div>
+            <i class="fa-solid fa-angle-right" id="rightArrow"></i>
+        </div>
+
+        <!-- 2.2.main -->
+        
+        <main>
+            
+            <!-- 2.2.1.searchbar -->
+            
+            <div id="div3">
+                <div id="searchBarImgs">
+                    <img src="./imgs/img1.webp" alt="" id="img1">
+                    <img src="./imgs/img2.jpg" alt="" id="img2">
+                    <img src="./imgs/img3.webp" alt="" id="img3">
+                    <img src="./imgs/img4.webp" alt="" id="img4">
+                </div>
+                <div id="searchBar">
+                    <input type="search" placeholder="  მოძებნეთ დანიშნულებები">
+                    <a href=""><button><i class="fa-solid fa-magnifying-glass"></i></button></a>
+                </div>
+            </div>
+            
+            <!-- 2.2.2.div4.1 -->
+
+            <div class="div4">
+                <p class="localCities">თქვენთან ახლოს მდებარე ქალაქები</p>
+                <div class="div4imgsdiv">
+                    <a href="">
+                        <img src="./imgs/img5.1.jpg" alt="">
+                        <p>მცხეთა</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.2.webp" alt="">
+                        <p>გორი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.3.jpg" alt="">    
+                        <p>ქუთაისი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.4.jpg" alt="">
+                        <p>ახალციხე</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img5.5.jpg" alt="">
+                        <p>მესტია</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2.2.3.div4.2 -->
+
+            <div class="div4">
+                <p class="localCities">ქალაქები მსოფლიოს გარშემო</p>
+                <div class="div4imgsdiv">
+                    <a href="">
+                        <img src="./imgs/img6.1.jpg" alt="">
+                        <p>პარიზი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.2.avif" alt="">
+                        <p>რომი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.3.jpg" alt="">    
+                        <p>ლონდონი</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.4.webp" alt="">
+                        <p>ბარსელონა</p>
+                    </a>
+                    <a href="">
+                        <img src="./imgs/img6.5.webp" alt="">
+                        <p>სტამბული</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2.2.4.div5 -->
+
+            <div class="div5_6">
+                <a href="" class="div5maina">ადგილობრივი ტურები</a>
+                <div class="div5_1">
+                    <a href="" class="div5_1options">
+                        <img src="./imgs/img7.1.jpg" alt="">
+                        <div class="div5_1options_1">
+                            <p class="pdanishnuleba">თბილისიდან: მცხეთა, ჯვარი, გორი, უფლისციხე, ტური გიდით</p>
+                            <p class="turisdro">9 საათი</p>  
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.9 <span style="color: rgb(83, 82, 82);">(329)</span></p> 
+                                </div>
+                                <p>₾40-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="div5_1options">
+                        <img src="./imgs/img7.2.jpg" alt="">
+                        <div class="div5_1options_1">
+                            <p class="pdanishnuleba">თბილისიდან: ბორჯომი, რაბათი, ვარძია, ტური გიდით</p>
+                            <p class="turisdro">14 საათი</p>  
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.6 <span style="color: rgb(83, 82, 82);">(1425)</span></p> 
+                                </div>
+                                <p>₾70-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="div5_1options">
+                        <img src="./imgs/img7.3.jpg" alt="">
+                        <div class="div5_1options_1">
+                            <p class="pdanishnuleba">თბილისიდან: კახეთის რეგიონი, თელავი, ყვარელი, სიღნაღი, ტური 7 ღვინის გასინჯვით</p>
+                            <p class="turisdro">7 საათი</p>  
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.8 <span style="color: rgb(83, 82, 82);">(564)</span></p> 
+                                </div>
+                                <p>₾60-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2.2.4.div6 -->
+
+            <div class="div5_6">
+                <a href="" class="div5maina">საზღვარგარეთის ტურები</a>
+                <div class="div5_1">
+                    <a href="" class="div5_1options">
+                        <img src="./imgs/img8.1.avif" alt="">
+                        <div class="div5_1options_1">
+                            <p class="pdanishnuleba">ერთ დღიანი ტური პარიზიდან მონ სან მიშელამდე</p>
+                            <p class="turisdro">14 საათი</p>  
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.4 <span style="color: rgb(83, 82, 82);">(4509)</span></p> 
+                                </div>
+                                <p>€100-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="div5_1options">
+                        <img src="./imgs/img8.2.jpg" alt="">
+                        <div class="div5_1options_1">
+                            <p class="pdanishnuleba">მიუნხენიდან: ნოიშვაშტაინი და ლინდერჰოფის სასახლე, მთელ დღიანი მოგზაურობა</p>
+                            <p class="turisdro">12 საათი</p>  
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.7 <span style="color: rgb(83, 82, 82);">(809)</span></p> 
+                                </div>
+                                <p>€80-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="div5_1options">
+                        <img src="./imgs/img8.3.avif" alt="">
+                        <div class="div5_1options_1">
+                            <p class="pdanishnuleba">ათენიდან: სანტორინის მთავარი სანახაობები, ერთ დღიანი ტური, ღვინის გასინჯვა, ოიას მზის ჩასვლა</p>
+                            <p class="turisdro">9 საათი</p>  
+                            <div class="div5_1options_1_1">
+                                <div class="div5_1options_1_1_1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>4.5 <span style="color: rgb(83, 82, 82);">(2018)</span></p> 
+                                </div>
+                                <p>€40-დან</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2.2.5.div7 -->
+
+            <div id="div7">
+                <div id="div7_1">
+                    <p>ჩვენი პარტნიორი ავიაკომპანიები:</p>
+                </div>
+                <div id="div7_2">
+                    <a href="https://www.turkishairlines.com/en-int/index.html?gclsrc=aw.ds&gad_source=1&gad_campaignid=18477000126&gbraid=0AAAAADpYxIj3060ipSw0YTPDsbtPEt7K7&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGOFZiVb_ahXfevfhvEvO2qX9mtciBumTrE-UPrdnMIRLg5GZpVMr0aAm80EALw_wcB"><img src="./imgs/img11.1.png" alt=""></a>
+                    <a href="https://www.flypgs.com/en?gclsrc=aw.ds&ds_rl=1250899&ds_rl=1263089&gad_source=1&gad_campaignid=10156318707&gbraid=0AAAAADscbGwXdvvr6Vssvc0WyhwLXAXjk&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CEp8msopD8uFLIwxZE7APMMLxoFfsBIdJ69KQt2Hk41TSeEtVSJjDAaAqw4EALw_wcB"><img src="./imgs/img11.2.png" alt=""></a>
+                    <a href="https://www.lufthansa.com/ge/en/homepage"><img src="./imgs/img11.3.png" alt=""></a>
+                    <a href="https://www.lot.com/ge/en?gclsrc=aw.ds&utm_medium=search&utm_source=google&utm_campaign=brand-exact&utm_content=serp&utm_term=ge_en_none&hid=99_01&s_kwcid=AL!8589!3!683507734293!e!!g!lot&gad_source=1&gad_campaignid=605771262&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CHBjFD2gKGvBbxO4uUqktdV5AGpYQeDGhJB9CGekBwQPEQhRwnCQvAaAo2rEALw_wcB"><img src="./imgs/img11.4.png" alt=""></a>
+                    <a href="https://www.qatarairways.com/en-ge/homepage.html?CID=SXGE23456889M&account=Google-ME_CAUCASUS-GE-EN-Brand&campaign=Google%7CGE%7CBrand%7CHero%7CXXX%7CXXX%7CEN%7CEXT&adgroup=Brand+Hero&term=qatar+airways&&&&&gclsrc=aw.ds&gad_source=1&gad_campaignid=22868463982&gbraid=0AAAAADex6O0K6mnxUDiyMDnnb-mYX6EO5&gclid=Cj0KCQiA5uDIBhDAARIsAOxj0CGPKUA3mqaGxzlfMQqeLDXqCWYQwervfNKWTtfb4FPjML55aZyqfG0aAiV5EALw_wcB"><img src="./imgs/img11.5.jpg" alt=""></a>
+                    <a href="https://en.aegeanair.com/"><img src="./imgs/img11.6.png" alt=""></a>
+                    <a href="https://www.airbaltic.com/en-GE/index"><img src="./imgs/img11.7.png" alt=""></a>
+                    <a href="https://www.wizzair.com/en-gb"><img src="./imgs/img11.8.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- 2.2.6.div8 -->
+
+            <div id="div8">
+                <img src="./imgs/img10.png" alt="">
+            </div>
+
+        </main>
+
+        <!-- 2.3.footer -->
+
+        <footer>
+            <div id="footerdiv1">
+                <div id="footerdiv1_1">
+                    <a href="./index.html">მთავარი</a>
+                    <a href="./aboutUsGeo.html">ჩვენს შესახებ</a>
+                    <a href="./newsGeo.html">სიახლეები</a>
+                    <a href="./contactGeo.html">კონტაქტი</a>
+                    <div id="footerdiv1_1_1">
+                        <a href="">ეროვნული ტურები</a>
+                        <a href="">საერთაშორისო ტურები</a> 
+                    </div>
+                    
+                </div>
+                <div id="footerdiv1_2">
+                    <div id="footerdiv1_2_1">
+                        <a href="./wishListGeo.html">სურვილების სია</a>
+                        <a href="./cartGeo.html">კალათა</a>
+                        <a href="./profileGeo.html">პროფილი</a>
+                    </div>
+                    <div id="footerdiv1_2_2">
+                        <a href="">საიტის მოხმარების წესები</a>
+                        <a href="">მონაცემთა შეგროვების პირობები</a>
+                    </div>
+                </div>
+            </div>
+            <div id="footerdiv2">
+                <p><i class="fa-regular fa-copyright"></i> 2025 ალექსანდრე პატარაია</p>
+                <div id="footerdiv2_1">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></i>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="./js/finalProject.js"></script>
+    </body>
+</html>

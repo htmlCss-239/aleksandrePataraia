@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ka">
+    
+    <!-- 1.head  -->
+    
+    <head>
+        
+        <!-- 1.1.main meta tags -->
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="აღმოაჩინეთ საქართველოს საუკეთესო ტურები: თბილისი, მცხეთა, კახეთი (ღვინის ტურები), ვარძია და მაღალმთიანი რეგიონები. იპოვეთ თქვენი იდეალური ადგილობრივი ან საერთაშორისო მოგზაურობა - ჩვენ გთავაზობთ სრულ ტურისტულ მომსახურებას, გიდებსა და დაუვიწყარ თავგადასავლებს.">
+        <meta name="keywords" content="ტურები საქართველოში, მოგზაურობა საქართველოში, საზღვარგარეთის ტურები, ტურები ევროპაში, ტურისტული კომპანია, ტურ ოპერატორი, გიდი საქართველოში, ტურისტული გზამკვლევი, ეროვნული ტურები, სათავგადასავლო ტურები, კულტურული ტურები, ღვინის ტურები, ერთდღიანი ტურები, თბილისის ტურები, მცხეთა, გორი, უფლისციხე, ვარძია, ბორჯომი, კახეთის ტურები, სიღნაღი, თელავი, მესტია, იაფი ტურები, საუკეთესო ტურები, დასვენება საქართველოში, ავიაბილეთები, სამოგზაურო მომსახურება">
+        <meta name="author" content="ალექსანდრე პატარაია">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 1.2.socials meta tag -->
+        
+        <meta property="og: type" content="website">
+        <meta property="og: locale" content="ka">
+        <meta property="og: title" content="ყველა ტური ერთ საიტზე">
+        <meta property="og: description" content="აღმოაჩინეთ საქართველოს საუკეთესო ტურები: თბილისი, მცხეთა, კახეთი (ღვინის ტურები), ვარძია და მაღალმთიანი რეგიონები. იპოვეთ თქვენი იდეალური ადგილობრივი ან საერთაშორისო მოგზაურობა - ჩვენ გთავაზობთ სრულ ტურისტულ მომსახურებას, გიდებსა და დაუვიწყარ თავგადასავლებს.">
+        <meta property="og: url" content="">
+        <meta property="og: image" content="">
+        <meta property="og: site-name" content="Turoperatori.ge">
+        
+        <!-- 1.3.other links -->
+        
+        <link rel="stylesheet" href="./finalProjectMain.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="./imgs/1.Logo.png">
+    </head>
+    
+    <!-- 2.body  -->
+    
+    <body>
+        
+        <!-- 2.1.header  -->
+        
+        <header>
+            <div id="divfullheader">
+                <!-- 2.1.1.div1  -->
+                
+                <div id="div0">
+                    <div id="div1">
+                        <a href="./index.html"><img src="./imgs/1.Logo.png" alt=""></a> 
+                    </div>
+                    
+                    <!-- 2.1.2.div2  -->
+                    
+                    <div id="div2">                        
+                        <a href="./wishListGeo.html"><i class="fa-regular fa-heart" ></i>სურვილების სია</a>
+                        <a href="./cartGeo.html"><i class="fa-solid fa-cart-shopping"></i>კალათა</a>                       
+                        <a href="./profileGeo.html"><i class="fa-regular fa-user"></i>პროფილი</a>
+                        <a href="./profileEng.html"><i class="fa-solid fa-language"></i>ენა</a>
+                        <a href=""><i class="fa-regular fa-moon"></i>ფონი</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2.1_2.socialsicons -->
+
+        <div onclick="toggleIcons()" id="socialsSideBar">
+            <div id="socialsDiv">
+                <a  href="https://www.facebook.com/">
+                    <img class="socialslogos" src="./imgs/img9.1.webp" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="socialslogos" src="./imgs/img9.3.jpg" alt="">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img class="socialslogos" src="./imgs/img9.2.jpg" alt="">
+                </a>
+                <a href="https://x.com/">
+                    <img class="socialslogos" src="./imgs/img9.4.jpg" alt="">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img class="socialslogos" src="./imgs/img9.5.png" alt="">
+                </a>
+            </div>
+            <i class="fa-solid fa-angle-right" id="rightArrow"></i>
+        </div>
+
+        <!-- 2.2.main -->
+        
+        <main> 
+            <div id="Prdiv2">
+                <h2>ავტორიზაცია</h2>
+                <form id="logForm" action="/login" target="_blank" method="post" onsubmit="checkPassword(event)">
+                    <label class="textLabel" for="logEmail">მეილი</label>
+                    <input class="textInput" type="email" name="logEmail" placeholder="შეიყვანეთ თქვენი მეილი">
+                    <label for="logPassword">პაროლი</label>
+                    <input id="passwordInput" type="password" name="logPassword" placeholder="შეიყვანეთ თქვენი პაროლი">
+                    <button type="submit">შესვლა</button>
+                </form>
+                <form id="checkForm" action="">
+                    <input type="checkbox" name="checkInput" value="Agreed">
+                    <label id="checkLabel" for="checkInput">ვეთანმხები მონაცემთა შეგროვების პირობებს</label>
+                </form>
+            </div>
+        </main>
+
+        <!-- 2.3.footer -->
+
+        <footer>
+            <div id="footerdiv1">
+                <div id="footerdiv1_1">
+                    <a href="./index.html">მთავარი</a>
+                    <a href="./aboutUsGeo.html">ჩვენს შესახებ</a>
+                    <a href="./newsGeo.html">სიახლეები</a>
+                    <a href="./contactGeo.html">კონტაქტი</a>
+                    <div id="footerdiv1_1_1">
+                        <a href="">ეროვნული ტურები</a>
+                        <a href="">საერთაშორისო ტურები</a> 
+                    </div>
+                    
+                </div>
+                <div id="footerdiv1_2">
+                    <div id="footerdiv1_2_1">
+                        <a href="./wishListGeo.html">სურვილების სია</a>
+                        <a href="./cartGeo.html">კალათა</a>
+                        <a href="./profileGeo.html">პროფილი</a>
+                    </div>
+                    <div id="footerdiv1_2_2">
+                        <a href="">საიტის მოხმარების წესები</a>
+                        <a href="">მონაცემთა შეგროვების პირობები</a>
+                    </div>
+                </div>
+            </div>
+            <div id="footerdiv2">
+                <p><i class="fa-regular fa-copyright"></i> 2025 ალექსანდრე პატარაია</p>
+                <div id="footerdiv2_1">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></i>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="./js/finalProject.js"></script>
+    </body>
+</html>
