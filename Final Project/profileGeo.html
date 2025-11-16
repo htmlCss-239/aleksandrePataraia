@@ -86,12 +86,16 @@
         <main> 
             <div id="Prdiv2">
                 <h2>ავტორიზაციის გავლა</h2>
-                <form class="logForm" action="/login" target="_blank" method="post">
-                    <label for="logEmail">მეილი</label>
-                    <input type="email" name="logEmail" placeholder="შეიყვანეთ თქვენი მეილი">
+                <form id="logForm" action="/login" target="_blank" method="post" onsubmit="checkPassword(event)">
+                    <label class="textLabel" for="logEmail">მეილი</label>
+                    <input class="textInput" type="email" name="logEmail" placeholder="შეიყვანეთ თქვენი მეილი">
                     <label for="logPassword">პაროლი</label>
-                    <input type="password" name="logPassword" placeholder="შეიყვანეთ თქვენი პაროლი">
+                    <input class="textInput" type="password" name="logPassword" placeholder="შეიყვანეთ თქვენი პაროლი">
                     <button type="submit">შესვლა</button>
+                </form>
+                <form id="checkForm" action="">
+                    <input type="checkbox" name="checkInput" value="Agreed">
+                    <label id="checkLabel" for="checkInput">ვეთანმხები მონაცემთა შეგროვების პირობებს</label>
                 </form>
             </div>
         </main>

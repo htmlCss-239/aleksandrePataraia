@@ -25,3 +25,17 @@ icon.addEventListener('click', function() {
 });
 
 
+function checkPassword(event) {
+    let passwordInput = document.getElementById('passwordInput');
+    let passwordValue = passwordInput.value;
+
+    if (passwordValue.length < 8) {
+        event.preventDefault(); 
+        alert('Password should be at least 8 characters long');
+    } else {
+        alert('Password is at least 8 characters long (Submitting...)');
+    }
+}
+
+
+
