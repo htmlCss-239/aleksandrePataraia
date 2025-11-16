@@ -813,7 +813,7 @@ footer a{
     display: flex;
 }
 
-/* 5.aboutUs */
+/* 5.otherHTMLs */
 #AUdiv3{
     display: flex;
     flex-direction: column;
@@ -854,4 +854,64 @@ footer a{
 
 #wishlistimg{
     width: var(--zoma_200);
+}
+
+#Prdiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--zoma_50);
+    padding-bottom: var(--zoma_150);
+    gap: var(--zoma_40);
+    width: 100%;
+}
+
+#Prdiv2 h2{
+    color: var(--fonis_feri1);
+}
+
+#Prdiv2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--zoma_20);
+    border: var(--fonis_feri1) 2px solid;
+    padding: var(--zoma_40);
+    border-radius: var(--zoma_10);
+    background-color: var(--fonis_feri1);
+    color: var(--textis_feri1);
+}
+
+#Prdiv2 input{
+    width: var(--zoma_300);
+    height: var(--zoma_40);
+    font-family: mtavruli;
+}
+
+#Prdiv2 input:focus{
+    color: var(--fonis_feri1);
+}
+
+#Prdiv2 button{
+    width: var(--zoma_100);
+    border-radius: var(--zoma_10);
+    height: var(--zoma_30);
+    background-color: var(--textis_feri1);
+    color: var(--fonis_feri1);
+    font-family: mtavruli;
+    border: var(--fonis_feri1) 1px solid;
+}
+
+#Prdiv2 button:hover{
+    cursor: pointer;
+    background-color: var(--fonis_feri2);
+    color: var(--textis_feri2);
+    transition: 0.4s;
+    transform: scale(1.3);
+}
+
+:lang(en) #Prdiv2 input, #Prdiv2 button {
+    font-family: Stacks;
 }

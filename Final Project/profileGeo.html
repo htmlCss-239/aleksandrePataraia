@@ -51,26 +51,10 @@
                         <a href="./wishListGeo.html"><i class="fa-regular fa-heart" ></i>სურვილების სია</a>
                         <a href="./cartGeo.html"><i class="fa-solid fa-cart-shopping"></i>კალათა</a>                       
                         <a href="./profileGeo.html"><i class="fa-regular fa-user"></i>პროფილი</a>
-                        <a href="./cartEng.html"><i class="fa-solid fa-language"></i>ენა</a>
+                        <a href="./profileEng.html"><i class="fa-solid fa-language"></i>ენა</a>
                         <a href=""><i class="fa-regular fa-moon"></i>ფონი</a>
                     </div>
                 </div>
-
-                <!-- 2.1.3.nav -->
-
-                <nav>
-                    <a href="./index.html">მთავარი</a>
-                    <a href="./aboutUsGeo.html">ჩვენს შესახებ</a>
-                    <a href="./newsGeo.html">სიახლეები</a>
-                    <a href="./contactGeo.html">კონტაქტი</a>
-                    <div id="toursDD">
-                        <p onclick="toggleTours()" href="">ტურები <i class="fa-solid fa-angle-down"></i></p>
-                        <div id="toursLinks">
-                            <a href="">ეროვნული ტურები</a>
-                            <a href="">საერთაშორისო ტურები</a>
-                        </div>
-                    </div>
-                </nav>
             </div>
         </header>
 
@@ -100,10 +84,15 @@
         <!-- 2.2.main -->
         
         <main> 
-            <div id="Cadiv3">
-                <img src="./imgs/img12.svg" alt="">
-                <h2>არაფერია არჩეული</h2>
-                <p>თქვენს მიერ არჩეული კალათაში დარჩება 30 წუთის განმავლობაში</p>
+            <div id="Prdiv2">
+                <h2>ავტორიზაციის გავლა</h2>
+                <form class="logForm" action="/login" target="_blank" method="post">
+                    <label for="logEmail">მეილი</label>
+                    <input type="email" name="logEmail" placeholder="შეიყვანეთ თქვენი მეილი">
+                    <label for="logPassword">პაროლი</label>
+                    <input type="password" name="logPassword" placeholder="შეიყვანეთ თქვენი პაროლი">
+                    <button type="submit">შესვლა</button>
+                </form>
             </div>
         </main>
 
